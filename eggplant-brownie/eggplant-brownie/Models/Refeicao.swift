@@ -12,12 +12,12 @@ class Refeicao: NSObject {
     // MARK - Atributos
     
     let nome: String
-    let felicidade: String
+    let felicidade: Int
     let itens: Array<Item> = []
 
     // MARK - Init
 
-    init(nome: String, felicidade: String) {
+    init(nome: String, felicidade: Int) {
        self.nome = nome
        self.felicidade = felicidade
     }
