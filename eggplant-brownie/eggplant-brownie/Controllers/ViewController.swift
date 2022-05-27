@@ -54,6 +54,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             itensSelecionados.append(itens[linhaDaTabela])
         } else {
             celula.accessoryType = .none
+            let item = itens[indexPath.row]
+            if let position = itensSelecionados.index(of: item) {
+                itensSelecionados.remove(at: position)
+            }
+                        
         }
     }
     
