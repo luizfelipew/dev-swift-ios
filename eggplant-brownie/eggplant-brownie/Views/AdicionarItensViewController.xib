@@ -46,10 +46,13 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPv-AI-t2J">
-                    <rect key="frame" x="165" y="273" width="85" height="31"/>
+                    <rect key="frame" x="154" y="272" width="107" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Adicionar"/>
+                    <connections>
+                        <action selector="adicionarItem:" destination="-1" eventType="touchUpInside" id="vzC-Br-DX7"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
