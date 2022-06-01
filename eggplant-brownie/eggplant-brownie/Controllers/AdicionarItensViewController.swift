@@ -40,7 +40,6 @@ class AdicionarItensViewController: UIViewController {
     
     //Mark - IBAction
     
-    
     @IBAction func adicionarItem(_ sender: Any) {
         
         guard let nome = nomeTextField.text, let calorias = caloriasTextField.text else { return }
