@@ -36,15 +36,14 @@ class RefeicoesTableViewController: UITableViewController,
             let celula = gesture.view as! UITableViewCell
             guard let indexPath = tableView.indexPath(for: celula) else { return }
             let refeicao = refeicoes[indexPath.row]
+                        
+            let alerta = UIAlertController(title: refeicao.nome, message: refeicao.detalhes(), preferredStyle: .alert)
             
-            let alerta = UIAlertController(title: refeicao.nome, message: "felicidade \(refeicao.felicidade)",
-                                           preferredStyle: .alert)
             let botaoCancelar = UIAlertAction(title: "ok", style: .cancel, handler: nil)
             
             alerta.addAction(botaoCancelar)
             
             present(alerta, animated: true, completion: nil)
-            
         }
         
     }
