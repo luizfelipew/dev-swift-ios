@@ -31,6 +31,11 @@ class RefeicoesTableViewController: UITableViewController,
         return celula
     }
     
+    func add(_ refeicao: Refeicao) {
+        refeicoes.append(refeicao)
+        tableView.reloadData()
+    }
+    
     @objc func mostrarDetalhes(_ gesture: UILongPressGestureRecognizer) {
         if gesture.state == .began {
             let celula = gesture.view as! UITableViewCell
@@ -39,18 +44,19 @@ class RefeicoesTableViewController: UITableViewController,
                         
             let alerta = UIAlertController(title: refeicao.nome, message: refeicao.detalhes(), preferredStyle: .alert)
             
-            let botaoCancelar = UIAlertAction(title: "ok", style: .cancel, handler: nil)
-            
+            let botaoCancelar = UIAlertAction(title: "cancelar", style: .cancel)
             alerta.addAction(botaoCancelar)
+            
+            let botaoRemover = UIAlertAction(title: "remover", style: .destructive, handler: removeRefeicao)
+            alerta.addAction(botaoRemover)
             
             present(alerta, animated: true, completion: nil)
         }
         
     }
     
-    func add(_ refeicao: Refeicao) {
-        refeicoes.append(refeicao)
-        tableView.reloadData()
+    func removeRefeicao(alerta: UIAlertAction) {
+        print("remover refeicao")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
