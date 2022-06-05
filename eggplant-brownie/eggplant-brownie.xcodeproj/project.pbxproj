@@ -10,6 +10,7 @@
 		380B52F428483A8400BA4013 /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380B52F328483A8400BA4013 /* Alerta.swift */; };
 		380FED9F2843C690001DB767 /* AdicionarItensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FED9D2843C690001DB767 /* AdicionarItensViewController.swift */; };
 		380FEDA02843C690001DB767 /* AdicionarItensViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380FED9E2843C690001DB767 /* AdicionarItensViewController.xib */; };
+		387072FC284D284400C24065 /* RemoveRefeicaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387072FB284D284400C24065 /* RemoveRefeicaoViewController.swift */; };
 		B30A87E02824B84D00CF4C65 /* RefeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30A87DF2824B84D00CF4C65 /* RefeicoesTableViewController.swift */; };
 		B33A6220254B9983005399DE /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A621F254B9983005399DE /* Refeicao.swift */; };
 		B33A6223254B9A62005399DE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A6222254B9A62005399DE /* Item.swift */; };
@@ -25,6 +26,7 @@
 		380B52F328483A8400BA4013 /* Alerta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
 		380FED9D2843C690001DB767 /* AdicionarItensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdicionarItensViewController.swift; sourceTree = "<group>"; };
 		380FED9E2843C690001DB767 /* AdicionarItensViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdicionarItensViewController.xib; sourceTree = "<group>"; };
+		387072FB284D284400C24065 /* RemoveRefeicaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveRefeicaoViewController.swift; sourceTree = "<group>"; };
 		B30A87DF2824B84D00CF4C65 /* RefeicoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicoesTableViewController.swift; sourceTree = "<group>"; };
 		B33A621F254B9983005399DE /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
 		B33A6222254B9A62005399DE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				B3F98768253A4BAE0024D7C9 /* ViewController.swift */,
 				B30A87DF2824B84D00CF4C65 /* RefeicoesTableViewController.swift */,
 				380FED9D2843C690001DB767 /* AdicionarItensViewController.swift */,
+				387072FB284D284400C24065 /* RemoveRefeicaoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				380B52F428483A8400BA4013 /* Alerta.swift in Sources */,
 				B33A6223254B9A62005399DE /* Item.swift in Sources */,
 				B3F98769253A4BAE0024D7C9 /* ViewController.swift in Sources */,
+				387072FC284D284400C24065 /* RemoveRefeicaoViewController.swift in Sources */,
 				380FED9F2843C690001DB767 /* AdicionarItensViewController.swift in Sources */,
 				B3F98765253A4BAE0024D7C9 /* AppDelegate.swift in Sources */,
 				B30A87E02824B84D00CF4C65 /* RefeicoesTableViewController.swift in Sources */,
