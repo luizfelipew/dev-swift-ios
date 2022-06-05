@@ -41,6 +41,10 @@ class RefeicoesTableViewController: UITableViewController,
             let celula = gesture.view as! UITableViewCell
             guard let indexPath = tableView.indexPath(for: celula) else { return }
             let refeicao = refeicoes[indexPath.row]
+            
+            func removeRefeicao(alerta: UIAlertAction) {
+                print("remover refeicao \(refeicao.nome)")
+            }
                         
             let alerta = UIAlertController(title: refeicao.nome, message: refeicao.detalhes(), preferredStyle: .alert)
             
@@ -55,10 +59,7 @@ class RefeicoesTableViewController: UITableViewController,
         
     }
     
-    func removeRefeicao(alerta: UIAlertAction) {
-        print("remover refeicao")
-    }
-    
+  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "adicionar" {
             if let viewController = segue.destination as? ViewController {
